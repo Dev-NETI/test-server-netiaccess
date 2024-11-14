@@ -194,6 +194,7 @@ use App\Http\Livewire\Admin\TrainingCalendar\ATrainingCalendarComponent;
 use App\Http\Livewire\Company\Billing\CClientBillingStatementMonitoring;
 use App\Http\Livewire\Admin\Billing\Child\ClientInfo\UpdateInfoComponent;
 use App\Http\Livewire\Admin\Certificate\ACertificateMaintenanceComponent;
+use App\Http\Livewire\SystemMockUp\BillingDashboard\BillingDashboardView;
 use App\Http\Livewire\Admin\Approval\Invalid\ACertificateInvalidComponent;
 use App\Http\Livewire\Admin\Billing\APriceMatrixCoursesSettingsComponents;
 use App\Http\Livewire\Admin\Certificate\AExcelCertificateHistoryComponent;
@@ -599,6 +600,9 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             Route::get('company/billing/registration-form/{enrollment_id}', [DormitoryRegFormComponent::class, 'generate'])->name('c.registration-form');
             Route::get('company/billingStatementv2', [GenerateBillingStatement2::class, 'generatePdf'])->name('c.billing-statement2');
             Route::get('company/view-certificates', CCertificateBatchReportComponent::class)->name('c.certificate-report');
+
+            // System MockUp
+            Route::get('company/billing-dashboard-v2', BillingDashboardView::class)->name('c.billing-dashboard-v2');
         });
     });
 
@@ -725,3 +729,7 @@ Route::get('/certificates/qr/{hash_id}', AGenerateUrlCertificateComponent::class
 Route::get('/request-access-handout', RequestAccessHandoutComponent::class)->name('request-access');
 Route::get('/handout/protected', ViewAccessHandoutComponent::class)->name('req.view-handout');
 Route::get('/download', [ViewAccessHandoutComponent::class, 'downloadPDF'])->name('req.download-handout');
+
+
+
+//for nyk sm test
