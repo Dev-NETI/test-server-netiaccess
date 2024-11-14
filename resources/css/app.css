@@ -1,0 +1,21 @@
+/* landing page video */
+@media (max-width: 1400px) {
+    .video-container {
+        display: none;
+    }
+
+    .landing-page-picture {
+        display: block !important;
+    }
+
+    .display-1,
+    .text-info {
+        font-size: 48px !important;
+    }
+
+    .btn.btn-info.btn-lg {
+        font-size: 16px !important;
+        padding: 12px 24px !important;
+        margin-bottom: 8px;
+    }
+}

@@ -1,0 +1,1 @@
+        <iframe src="{{asset($uri)}}#toolbar=0" width="100%" height="1200"></iframe>
