@@ -247,6 +247,7 @@ use App\Http\Livewire\Admin\TrainingCalendar\Special\ATrainingSpecialCalendarCom
 use App\Http\Livewire\Admin\Instructor\EditInstructor\EditCertificatesLicensesComponent;
 use App\Http\Livewire\Admin\Reports\TrainingSchedule\AExcelWeeklyTrainingScheduleComponent;
 use App\Http\Livewire\Admin\TrainingCalendar\Special\ATrainingSpecialCalendarShowComponent;
+use App\Http\Livewire\SystemMockUp\BillingDashboard\BillingProcessView;
 
 /*
 |--------------------------------------------------------------------------
@@ -603,6 +604,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
             // System MockUp
             Route::get('company/billing-dashboard-v2', BillingDashboardView::class)->name('c.billing-dashboard-v2');
+            Route::get('company/billing-process-view', BillingProcessView::class)->name('c.billing-process-view');
         });
     });
 

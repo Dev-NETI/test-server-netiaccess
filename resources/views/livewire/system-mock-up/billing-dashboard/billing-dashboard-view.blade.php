@@ -4,7 +4,7 @@
     <div wire:ignore class="row">
                 <livewire:components.system-mock-up.billing-dashboard.dashboard-card-component 
                 icon="bi bi-building" step="Step 1"
-                process="Manning" role="" />
+                process="Manning" role="" route="c.billing-process-view" />
 
                 <livewire:components.system-mock-up.billing-dashboard.dashboard-card-component 
                 icon="bi bi-people" step="Step 2"
