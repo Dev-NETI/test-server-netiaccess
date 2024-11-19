@@ -25,22 +25,6 @@ class BillingProcessView extends Component
             'nationality' => 'Filipino',
             'serialnumber' => '2409-025',
         ],
-        [
-            'name' => 'HERNANDO J. MACALALAD',
-            'vessel' => 'IGF-PCC',
-            'rank' => '1/AE',
-            'company' => 'NYK-FIL SHIP MANAGEMENT INC.',
-            'nationality' => 'Filipino',
-            'serialnumber' => '2409-025',
-        ],
-        [
-            'name' => 'JORDAN DAVE O. NUEVA',
-            'vessel' => 'IGF-PCC',
-            'rank' => '1/AE',
-            'company' => 'NYK-FIL SHIP MANAGEMENT INC.',
-            'nationality' => 'Filipino',
-            'serialnumber' => '2409-025',
-        ],
     ];
     public $attachment = [
         [

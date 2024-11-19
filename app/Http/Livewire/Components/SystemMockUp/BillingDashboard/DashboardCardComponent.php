@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class DashboardCardComponent extends Component
 {
-    public $icon, $process, $step, $counttraineedata, $route;
+    public $icon, $process, $step, $counttraineedata, $route, $status = 1;
 
     public function render()
     {
@@ -15,6 +15,6 @@ class DashboardCardComponent extends Component
 
     public function redirection()
     {
-        return redirect()->route($this->route);
+        return redirect()->route($this->route, ['status' => $this->status]);
     }
 }

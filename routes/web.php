@@ -604,7 +604,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
             // System MockUp
             Route::get('company/billing-dashboard-v2', BillingDashboardView::class)->name('c.billing-dashboard-v2');
-            Route::get('company/billing-process-view', BillingProcessView::class)->name('c.billing-process-view');
+            Route::get('company/billing-process-view/{status}', BillingProcessView::class)->name('c.billing-process-view');
         });
     });
 
